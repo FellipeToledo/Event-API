@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://github.com/FellipeToledo/common-files/blob/main/bus-logo-vec-blue.png" alt="bus-logo" width="120px" height="120px"/>
   <br>
-  <i>API of events that impact the itinerary of the public bus passenger system in the city of Rio de Janeiro.</i>
+  <i>API of events that impede the circulation of buses on the track, outside the responsibility of the operators, and that impact the calculation of valid trips.</i>
   <i>The objective of this project is to meet <a href="https://doweb.rio.rj.gov.br/"><strong>art. 4 of SMTR Resolution Nº 3521, May 31, 2022</strong></a>, which establishes the methodology for measuring mileage performed by the Public Service of Passenger Bus Transportation - SPPO to be subsidized by the Municipality of Rio de Janeiro, according to the premises and
 requirements established in the judicial agreement.</i>
   <br>
