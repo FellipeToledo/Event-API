@@ -1,5 +1,6 @@
 package com.toledo.eventapi.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.toledo.eventapi.enums.EventType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -32,16 +33,17 @@ public class Event {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonProperty("_id")
     private Integer id;
 
     private LocalDateTime registerDateTime = LocalDateTime.now();
 
+    @Column(name = "id_source")
+    private String source;
+
     @Column(name = "event_type")
     @Enumerated(EnumType.STRING)
     private EventType eventType;
-
-    @Column(name = "id_source")
-    private String source;
 
     @Column(name = "starting_date_time")
     private LocalDateTime startingDateTime;
