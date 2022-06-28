@@ -14,7 +14,7 @@ jobs:
     docker:
       - image: cimg/openjdk:11.0
         environment:
-          TEST_DATABASE_URL: postgresql://postgres@localhost/circle_test
+          TEST_DATABASE_URL: postgresql://postgres@localhost/event_db
 
       - image: cimg/postgres:14.2
     # Add steps to the job
