@@ -14,7 +14,7 @@ jobs:
     docker:
       - image: cimg/openjdk:11.0
         environment:
-          TEST_DATABASE_URL: postgresql://postgres@localhost/event_db
+          TEST_DATABASE_URL: postgresql://postgres@localhost/circle_test
 
       - image: cimg/postgres:14.2
     # Add steps to the job
@@ -28,6 +28,7 @@ jobs:
       - run: whoami
       - run: |
           psql \
+          -c "CREATE DATABASE event_db
           -d $TEST_DATABASE_URL \
           -c "CREATE TABLE test (name char(25));"
       - run: |
