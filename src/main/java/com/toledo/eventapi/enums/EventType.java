@@ -7,6 +7,7 @@ package com.toledo.eventapi.enums;
 public enum EventType {
 
     OCCURRENCE("Ocorrência"),
+    SEASONAL("Sazonal"),
     PROGRAMMED("Programada");
 
 
